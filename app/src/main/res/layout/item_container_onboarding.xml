@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageOnboardingIconCenter"
+        android:layout_width="278dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginStart="48dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <ImageView
+        android:id="@+id/imageOnboardingIconLeft"
+        android:layout_width="310dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="-92dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageOnboardingIconRight"
+        android:layout_width="236dp"
+        android:layout_height="225dp"
+        android:visibility="invisible"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="0dp"
+        android:paddingEnd="-58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageOnboardingIconLeft" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="0dp"
+        android:alpha="0.56"
+        android:hint="@string/title_text"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageOnboardingIconLeft" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/description_text"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <TextView
+        android:id="@+id/textSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        android:layout_marginEnd="0dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
